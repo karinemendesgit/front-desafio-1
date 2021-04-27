@@ -41,11 +41,6 @@ svg {
     justify-content: space-evenly;
 }
 
-main {
-    display: grid;
-    grid-template-rows: 1152px 444px;
-}
-
 .post {
     display: grid;
     background-color: #FFFFFF;
@@ -68,10 +63,6 @@ h1 {
     margin: 0px 0px 14px 24px;
 }
 
-img {
-    margin-bottom: 24px;
-}
-
 .post p, ul, li {
     font-size: 14px;
     line-height: 19px;
@@ -82,6 +73,20 @@ img {
 
 ul{
     margin-left: 62px;
+}
+
+p:nth-child(4) {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+p:nth-child(6) {
+    margin-top: 24px;
+    margin-bottom: 29px;
+}
+
+p:last-child {
+    margin: 30px 24px 46px 24px;
 }
 
 .form {
@@ -109,6 +114,8 @@ ul{
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 2px;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
 
 .form button {
@@ -118,7 +125,7 @@ ul{
     box-sizing: border-box;
     border-radius: 20px;
     background-color: #FE0078;;
-    margin: 0px 24px 24px 614px;
+    margin: 0px 0px 64px 614px;
     font-size: 14px;
     color: #FFFFFF;
 }
@@ -127,7 +134,7 @@ ul{
     background-color: #FFFFFF;
     width: 380px;
     display: grid;
-    margin: 0px 0px 906px 50px;
+    margin: 0px 0px 320px 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -145,7 +152,16 @@ input {
     color: #545454;
 }
 
-input:hover {
+textarea {
+    width: 732px;
+    margin: 8px 0px 44px 0px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input:hover, textarea:hover {
     border: 1px solid #FE0078;
     cursor: pointer;
 }
