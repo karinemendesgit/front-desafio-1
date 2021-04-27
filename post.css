@@ -7,11 +7,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
-    grid-template-areas: "header" "content" "footer";
-}
-
-.content {
-    grid-area: content;
 }
 
 header {
@@ -42,13 +37,13 @@ svg {
 .content {
     display: flex;
     background-color: #F5F5F5;
-    padding: 56px 140px 64px 140px;
+    padding: 56px 140px 0px 140px;
     justify-content: space-evenly;
 }
 
 main {
     display: grid;
-    row-gap: 40px;
+    grid-template-rows: 1152px 444px;
 }
 
 .post {
@@ -59,48 +54,73 @@ main {
     border-radius: 4px;
 }
 
-.post button {
-    height: 43px;
-    width: 154px;
-    border: 1px solid #FE0078;
-    box-sizing: border-box;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    margin: 0px 24px 24px 552px;
-    font-size: 14px;
-    color: #545454;
-}
-
-.post button:hover {
-    background-color: #FE0078;
-    color: #FFFFFF;
-    cursor: pointer;
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 24px 0px 8px 24px;
+    padding: 0;
 }
 
 #data {
     font-size: 12px;
     line-height: 16px;
     color: #929292;
-    margin: 8px 0px 14px 24px;
+    margin: 0px 0px 14px 24px;
 }
 
-.post p {
+img {
+    margin-bottom: 24px;
+}
+
+.post p, ul, li {
     font-size: 14px;
     line-height: 19px;
     color: #545454;
-    margin: 24px 24px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 33px;
-    margin-left: 24px;
-    margin-top: 24px;
+ul{
+    margin-left: 62px;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 3;
+}
+
+.form h1 {
+    margin: 56px 0px 24px 0px;
+}
+
+.form label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
 }
 
 .form input{
+    all: unset;
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
+    width: 354px; 
+    height: 32px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.form button {
+    height: 43px;
+    width: 118px;
+    border: 1px solid #FE0078;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #FE0078;;
+    margin: 0px 24px 24px 614px;
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
 .sidebar {
