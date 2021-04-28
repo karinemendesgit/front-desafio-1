@@ -157,16 +157,18 @@ h2 {
     padding-left: 13px;
     padding-right: 16px;
     margin-bottom: 16px;
-}
-
-.indice {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px dashed #EEEEEE;
+}
+
+li {
+    all: unset;
     font-size: 14px;
     line-height: 19px;
-    color: #545454;
+    color: #FE0078;
 }
+
 
 .indice a:hover {
     color: #FE0078;

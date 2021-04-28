@@ -123,12 +123,27 @@ img {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    width: 354px; 
+    width: 329px; 
     height: 32px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 2px;
+    margin: 8px 0px 24px 0px;
+}
+
+.nomail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#assunto input{
+    width: 682px;
     margin: 8px 24px 24px 24px;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #FE0078;
+    cursor: pointer;
 }
 
 .form textarea {
@@ -173,11 +188,6 @@ input {
     font-size: 14px;
     line-height: 19px;
     color: #545454;
-}
-
-input:hover, textarea:hover {
-    border: 1px solid #FE0078;
-    cursor: pointer;
 }
 
 .categorias {

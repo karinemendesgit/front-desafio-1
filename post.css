@@ -118,6 +118,25 @@ p:last-child {
     margin-bottom: 24px;
 }
 
+.nomail {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 732px;
+    margin: 8px 0px 44px 0px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #FE0078;
+    cursor: pointer;
+}
+
 .form button {
     height: 43px;
     width: 118px;
@@ -150,20 +169,6 @@ input {
     font-size: 14px;
     line-height: 19px;
     color: #545454;
-}
-
-textarea {
-    width: 732px;
-    margin: 8px 0px 44px 0px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-    border-radius: 2px;
-}
-
-input:hover, textarea:hover {
-    border: 1px solid #FE0078;
-    cursor: pointer;
 }
 
 .categorias {
