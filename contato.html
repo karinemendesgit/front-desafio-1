@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Contato</title>
@@ -25,24 +25,45 @@
             </svg>
             <div class="links">
                 <a href="index.html">Início</a>
-                <p>Sobre</p>
-                <a href="contato.html">Contato</a>
+                <a href="about.html">Sobre</a>
+                <p>Contato</p>
             </div>
     </header>
     <div class="content">
-        <main>
-            <div class="post">
+        <div class="pagina3">
+            <div class="post-page3">
                 <h1>Contato</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. 
                 </p>
+                <div class="informacoes">
                 <h3>INFORMAÇÕES PARA CONTATO</h3>
-                <h4><img src="assets/localizacao.png" alt="">Endereço</h4>
-                <p>Av. Tancredo Neves, 2227, Ed. Salvador Prime Caminho das Árvores, Salvador • Bahia</p>
-                <h4><img src="assets/telefone.png" alt="">Telefone</h4>
-                <p>(71) 9 9999-9999 | (11) 1 1111-1111</p>
-                <h4><img src="assets/headset.png" alt="">Suporte</h4>
-                <p>suporte@cubos.academy</p>
-            <div class="form">
+                    <div class="titulo">
+                    <img src="assets/localizacao.png" alt="">
+                    <h4>Endereço</h4>
+                </div>
+                <div class="texto">
+                    <p>Av. Tancredo Neves, 2227, Ed. Salvador Prime Caminho das Árvores, Salvador • Bahia</p>
+                </div>
+                </div>
+                <div class="informacoes">
+                    <div class="titulo">
+                    <img src="assets/telefone.png" alt="">
+                    <h4>Telefone</h4>
+                </div>
+                <div class="texto">
+                    <p>(71) 9 9999-9999 | (11) 1 1111-1111</p>
+                </div>
+                </div>
+                <div class="informacoes">
+                    <div class="titulo">
+                    <img src="assets/headset.png" alt="">
+                    <h4>Suporte</h4>
+                </div>
+                <div class="texto">
+                    <p>suporte@cubos.academy</p>
+                </div>
+                </div>
+            <div class="form2">
                 <h3>ENTRE EM CONTATO</h3>
                 <form action="">
                     <div class="nomail">
@@ -60,39 +81,55 @@
                         <input type="text">
                     </div>
                     <label for="">Comentário</label><br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
                 </form>
                 <button>Enviar</button>
             </div>
         </div>
-        </main>
-        <div class="sidebar">
-            <input type="text" placeholder="Pesquise aqui..."> 
+        </div>
+        <div class="sidebar-contato">
+            <input id="placeholder-text" type="text" placeholder="Pesquise aqui..."> 
             <div class="categorias">
                 <h2>Categorias</h2>
                 <div class="indice">
-                    <a>Tecnologia</a>
-                    <a>25</a>
-                </div>
-                <div class="indice">
-                    <a>Estilo de vida</a>
-                    <a>8</a>
-                </div>
-                <div class="indice">
-                    <a>Arte</a>
-                    <a>2</a>
-                </div>
-                <div class="indice">
-                    <a>Comida</a>
-                    <a>12</a>
-                </div>
-                <div class="indice">
-                    <a>Aventura</a>
-                    <a>9</a>
-                </div>
-                <div class="indice">
-                    <a>Moda</a>
-                    <a>12</a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span>Tecnologia</span>
+                            <span>25</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Estilo de vida</span>
+                            <span>8</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Arte</span>
+                            <span>2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Comida</span>
+                            <span>12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Aventura</span>
+                            <span>9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Moda</span>
+                            <span>12</span>
+                        </a>
+                    </li>
+                </ul>
                 </div>
             </div>
             <div class="publicidade">
@@ -104,7 +141,7 @@
         </div>
     </div>
     <footer>
-        <p>Copyright ©2020 Todos os direitos reservados | by Karine</p>
+        <p>Copyright ©2020 Todos os direitos reservados | by Karine Mendes</p>
     </footer>
 </body>
 </html>

@@ -1,18 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     display: grid;
-    height: 100vh;
     grid-template-rows: 70px 1fr 70px;
-    grid-template-areas: "header" "content" "footer";
-}
-
-.content {
-    grid-area: content;
 }
 
 header {
@@ -60,6 +55,27 @@ main {
     border-radius: 4px;
 }
 
+.post h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    margin: 24px 0px 8px 24px;
+}
+
+#data {
+    font-size: 12px;
+    line-height: 16px;
+    color: #929292;
+    margin: 0px 0px 14px 24px;
+}
+
+.post p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+    margin: 24px 24px;
+}
+
 .post button {
     height: 43px;
     width: 154px;
@@ -78,42 +94,218 @@ main {
     cursor: pointer;
 }
 
-#data {
-    font-size: 12px;
-    line-height: 16px;
-    color: #929292;
-    margin: 8px 0px 14px 24px;
-}
-
-.post p {
-    font-size: 14px;
-    line-height: 19px;
-    color: #545454;
-    margin: 24px 24px;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 33px;
-    margin-left: 24px;
-    margin-top: 24px;
-}
-
-.form input{
-    background-color: #FFFFFF;
-}
-
-.sidebar {
-    background-color: #FFFFFF;
-    width: 380px;
+.pagina2 {
     display: grid;
-    margin: 0px 0px 906px 50px;
+}
+
+.post-page2, .post-page3 {
+    display: grid;
+    background-color: #FFFFFF;
+    width: 730px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
-input {
+.post-page2 h1, .post-page3 h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;    
+}
+
+.post-page2 h1 {
+    margin: 24px 0px 8px 24px;
+}
+
+.post-page3 h1 {
+    margin: 24px 24px;
+}
+
+#data {
+    font-size: 12px;
+    line-height: 16px;
+    color: #929292;
+    margin: 0px 0px 14px 24px;
+}
+
+.post-page2 p, .post-page2 ul, .post-page2 li, .post-page3 p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454;
+    margin: 0px 24px;
+}
+
+.post-page2 ul{
+    margin-left: 62px;
+}
+
+.post-page2 p:nth-child(4) {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.post-page2 p:nth-child(6) {
+    margin-top: 24px;
+    margin-bottom: 29px;
+}
+
+.post-page2 p:last-child {
+    margin: 30px 24px 46px 24px;
+}
+
+.form, .form2 {
+    display: grid;
+}
+
+.form h1 {
+    margin: 56px 0px 24px 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form label, .form2 label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.form input, .form2 input{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    height: 32px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin: 8px 0px 24px 0px;
+}
+
+.form input {
+    width: 354px; 
+}
+
+.nomail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form textarea {
+    width: 732px;
+    margin: 8px 0px 44px 0px;
+}
+
+textarea {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #FE0078;
+    cursor: pointer;
+}
+
+.form button, .form2 button {
+    height: 43px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #FE0078;;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.form button {
+    width: 118px;
+    border: 1px solid #FE0078;
+    margin: 0px 0px 64px 614px;
+}
+
+.pagina3 {
+    display: grid;
+    height: 100vh;
+}
+
+.informacoes h3, .form2 h3, .post-page3 h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.informacoes h3 {
+    margin: 32px 0px 26px 24px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    margin: 24px 0px 14px 26px;
+}
+
+.titulo h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-left: 8px;
+}
+
+.form2 h3  {
+    margin: 40px 0px 24px 24px;
+}
+
+.form2 label {
+    margin-left: 24px;
+}
+
+.form2 input{
+    width: 329px; 
+    margin: 8px 0px 24px 0px;
+}
+
+.form2 .nomail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nomail label {
+    margin-left: 0px;
+}
+
+#assunto input {
+    width: 682px;
+    margin: 8px 24px 24px 24px;
+}
+
+.form2 textarea {
+    width: 682px;
+    margin: 8px 24px 32px 24px;
+}
+
+.form2 button {
+    width: 93px;
+    border: none;
+    margin: 0px 24px 24px 613px;    
+}
+
+.sidebar-index, .sidebar-post, .sidebar-contato {
+    background-color: #FFFFFF;
+    width: 380px;
+    display: grid;
+    margin-left: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.sidebar-index, .sidebar-post {
+    height: 1428px;
+}
+
+.sidebar-contato {
+    height: 100%;
+}
+
+.sidebar-index input, .sidebar-post input, .sidebar-contato input {
     all: unset;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
@@ -122,34 +314,36 @@ input {
     height: 52px;
     padding-left: 20px;
     font-size: 14px;
-    line-height: 19px;
-    color: #545454;
+    line-height: 19px;    
 }
 
-input:hover {
+.sidebar-index input:hover, .sidebar-post input:hover, .sidebar-contato input:hover {
     border: 1px solid #FE0078;
     cursor: pointer;
 }
 
+.placecolor::-webkit-input-placeholder {
+    color: #545454;
+}
+
 .categorias {
     display: grid;
-    row-gap: 16px;
     margin: 32px 20px;
 }
 
-.categorias h2 {
-    margin-bottom: 40px;
-}
-
-h2 {
+.categorias h2, .publicidade h2 {    
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
     color: #000000;
-    border-left: 3px solid #FE0078;
+    border-left: 2px solid #FE0078;
     height: 38px;
     padding-left: 11px;
-    padding-top: 13px;
+    padding-top: 8px;
+}
+
+.categorias h2 {
+    margin-bottom: 40px;
 }
 
 .indice a {
@@ -160,19 +354,23 @@ h2 {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px dashed #EEEEEE;
+    color: #545454;
 }
 
-li {
+.indice li {
     all: unset;
     font-size: 14px;
     line-height: 19px;
-    color: #FE0078;
 }
 
+.indice span {
+    margin-bottom: 16px;    
+}
 
 .indice a:hover {
     color: #FE0078;
     cursor: pointer;
+    border-bottom: 2px dashed #FE0078;
 }
 
 .publicidade {
